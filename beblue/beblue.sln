@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Services", "Beblue.Services\Beblue.Services.csproj", "{381247A7-2890-4960-B348-5BE83AA2A639}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DD3F0901-0908-42AD-A21B-BDD4C3006B69} = {DD3F0901-0908-42AD-A21B-BDD4C3006B69}
+		{7BABC417-92AD-4368-A85C-72743315CE93} = {7BABC417-92AD-4368-A85C-72743315CE93}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Domain", "Beblue.Domain\Beblue.Domain.csproj", "{7BABC417-92AD-4368-A85C-72743315CE93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Repositories", "Beblue.Repositories\Beblue.Repositories.csproj", "{DD3F0901-0908-42AD-A21B-BDD4C3006B69}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BABC417-92AD-4368-A85C-72743315CE93} = {7BABC417-92AD-4368-A85C-72743315CE93}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Ui.Api", "Beblue.Ui.Api\Beblue.Ui.Api.csproj", "{EA05026C-D867-443C-B61F-396F0C2A87AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{381247A7-2890-4960-B348-5BE83AA2A639} = {381247A7-2890-4960-B348-5BE83AA2A639}
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9} = {A31111F8-5AB6-4877-AA9B-8F50182AA3D9}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Ioc", "Beblue.Ioc\Beblue.Ioc.csproj", "{A31111F8-5AB6-4877-AA9B-8F50182AA3D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beblue.Test", "Beblue.Test\Beblue.Test.csproj", "{BBBD45B9-0F3D-483B-A989-B00973FCBD41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{381247A7-2890-4960-B348-5BE83AA2A639} = {381247A7-2890-4960-B348-5BE83AA2A639}
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9} = {A31111F8-5AB6-4877-AA9B-8F50182AA3D9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beblue.DataVo", "Beblue.DataVo\Beblue.DataVo.csproj", "{A9066CB1-9817-4ADE-83D5-1E3BCDED475E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{381247A7-2890-4960-B348-5BE83AA2A639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381247A7-2890-4960-B348-5BE83AA2A639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381247A7-2890-4960-B348-5BE83AA2A639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381247A7-2890-4960-B348-5BE83AA2A639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BABC417-92AD-4368-A85C-72743315CE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BABC417-92AD-4368-A85C-72743315CE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BABC417-92AD-4368-A85C-72743315CE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BABC417-92AD-4368-A85C-72743315CE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3F0901-0908-42AD-A21B-BDD4C3006B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3F0901-0908-42AD-A21B-BDD4C3006B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3F0901-0908-42AD-A21B-BDD4C3006B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3F0901-0908-42AD-A21B-BDD4C3006B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA05026C-D867-443C-B61F-396F0C2A87AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA05026C-D867-443C-B61F-396F0C2A87AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA05026C-D867-443C-B61F-396F0C2A87AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA05026C-D867-443C-B61F-396F0C2A87AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31111F8-5AB6-4877-AA9B-8F50182AA3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBD45B9-0F3D-483B-A989-B00973FCBD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBD45B9-0F3D-483B-A989-B00973FCBD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBD45B9-0F3D-483B-A989-B00973FCBD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBD45B9-0F3D-483B-A989-B00973FCBD41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9066CB1-9817-4ADE-83D5-1E3BCDED475E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9066CB1-9817-4ADE-83D5-1E3BCDED475E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9066CB1-9817-4ADE-83D5-1E3BCDED475E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9066CB1-9817-4ADE-83D5-1E3BCDED475E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7803D1CE-15D0-47DB-A1E1-414A699DB627}
+	EndGlobalSection
+EndGlobal
