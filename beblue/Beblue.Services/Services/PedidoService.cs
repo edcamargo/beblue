@@ -68,9 +68,9 @@ namespace Beblue.Services.Services
             {
                 item.Discos = _discoRepository.GetById(item.DiscoId);
 
-                var a = _cashbackGeneroRepository.GetAll().Where(x => x.DiaSemana == (int)DateTime.Today.DayOfWeek && x.GeneroId == item.Discos.GeneroId).ToList();
+                var valorCashBack = _cashbackGeneroRepository.GetAll().Where(x => x.DiaSemana == (int)DateTime.Today.DayOfWeek && x.GeneroId == item.Discos.GeneroId).ToList();
 
-                foreach (var item2 in a)
+                foreach (var item2 in valorCashBack)
                 {
                     item.ValorCashBack = item.ValorCashBack + (item.Discos.Preco * item2.PercentualCashbackDia);
                 }
